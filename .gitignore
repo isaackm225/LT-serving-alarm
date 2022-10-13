@@ -1,0 +1,6 @@
+*.cfg
+*.csv
+Lib
+Include
+*.log
+Scripts
