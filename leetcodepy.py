@@ -1,3 +1,4 @@
+from typing import final
 import leetcode
 class LeetcodeApiStuff():
     def __init__(self) -> None:   
@@ -26,7 +27,7 @@ class LeetcodeApiStuff():
 
         self.api_response = api_instance.api_problems_topic_get(topic="algorithms")
 
-    def count_solved_problem(self)->int:
+    def count_solved_problems(self)->int:
         counter = 0
 
         slug_to_solved_status = {
@@ -38,12 +39,14 @@ class LeetcodeApiStuff():
             if slug_to_solved_status[pblm]: counter +=1
         return counter
 
-    def verify(self, initial,final)->bool:
+    def verify(self, initial)->bool:
+        final = LeetcodeApiStuff().count_solved_problems()
+        print(f'current record is: {final}')
         if final > initial:
             return True
         return False
 
-#Test = LeetcodeApiStuff()
-#init=Test.count_solved_problem()
-#fin=Test.count_solved_problem()
-#print(Test.verify(init,fin))
+Test = LeetcodeApiStuff()
+init=Test.count_solved_problems()
+print(init)
+print(Test.verify(init))
