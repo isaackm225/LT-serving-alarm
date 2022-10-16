@@ -9,7 +9,7 @@ def ring()->None:
     record = LTcode.count_solved_problems()
     verif = LTcode.verify(record)
     mixer.init()
-    mixer.music.load(r'.\Tone\Soft-Wake-Up.wav')
+    mixer.music.load(r'./Tone/Soft-Wake-Up.wav')
     while not verif:
         mixer.music.play()
         print('Playing')
