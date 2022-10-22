@@ -1,8 +1,9 @@
-from pygame import mixer
 import time
 import os
-from leetcodepy import LeetcodeApiStuff
+from pygame import mixer
 from random import randint
+from leetcodeAPI import LeetcodeApiStuff
+from maintenance import logwriter
 
 def ring()->None:
     LTcode = LeetcodeApiStuff()
@@ -25,3 +26,4 @@ def ring()->None:
 
 if __name__ == "__main__":
     ring()
+    logwriter().write_log()

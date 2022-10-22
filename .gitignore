@@ -5,3 +5,4 @@ Include
 *.log
 Scripts
 __pycache__/
+log.txt
