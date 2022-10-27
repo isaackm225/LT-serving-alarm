@@ -22,8 +22,13 @@ def ring()->None:
         print('Verifying')
         verif = LTcode.verify(record)
         print(verif)
+    return verif
         
 
 if __name__ == "__main__":
-    ring()
-    logwriter().write_log()
+    log = logwriter()
+    log.write_log()
+    v = ring()
+    if v:
+        log.logsuccess()
+    
