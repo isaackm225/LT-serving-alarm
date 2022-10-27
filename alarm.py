@@ -30,5 +30,5 @@ if __name__ == "__main__":
     log.write_log()
     v = ring()
     if v:
-        log.logsuccess()
+        log.log_success()
     
