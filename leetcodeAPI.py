@@ -1,15 +1,13 @@
-from typing import final
 import leetcode
-from credentials import *
+import os
 
 class LeetcodeApiStuff():
-    def __init__(self) -> None:   
+    def init_API(self) -> None:
+        """Initialize the Leetcode API, logins and conf"""   
         # Get the next two values from your browser cookies
-        leetcode_session = SESSION_KEY
-        csrf_token = CRF_TOKEN
-
+        leetcode_session = os.environ.get('LEETCODE_SESSION_TOKEN')
+        csrf_token = os.environ.get('LEETCODE_CSRF_TOKEN')
         configuration = leetcode.Configuration()
-
         configuration.api_key["x-csrftoken"] = csrf_token
         configuration.api_key["csrftoken"] = csrf_token
         configuration.api_key["LEETCODE_SESSION"] = leetcode_session
@@ -18,14 +16,10 @@ class LeetcodeApiStuff():
 
         api_instance = leetcode.DefaultApi(leetcode.ApiClient(configuration))
 
-        #==============================================================
-        #api initialized
-        #starting queries
-        #===============================================================
-
-        self.api_response = api_instance.api_problems_topic_get(topic="algorithms")
+        return api_instance.api_problems_topic_get(topic="algorithms")
 
     def count_solved_problems(self)->int:
+        """Counts the number of leetcode pblm solved"""
         counter = 0
 
         slug_to_solved_status = {
@@ -38,13 +32,8 @@ class LeetcodeApiStuff():
         return counter
 
     def verify(self, initial)->bool:
-        final = LeetcodeApiStuff().count_solved_problems()
-        print(f'current record is: {final}')
+        """Compare the number of pbm solved when the alarm first ring and now """
+        final = self.count_solved_problems()
         if final > initial:
             return True
         return False
-
-Test = LeetcodeApiStuff()
-init=Test.count_solved_problems()
-print(init)
-print(Test.verify(init))
