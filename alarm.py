@@ -43,7 +43,7 @@ class Alarm(file_handler,LeetcodeApiStuff):
         mixer.music.play()
         while not verif:
             verif = self.verify(record)            
-        mixer.music.fadeout(5000)
+        mixer.music.fadeout(2500)
         print('Alarm successfully shutdown')
 
         

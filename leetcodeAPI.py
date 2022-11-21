@@ -34,6 +34,8 @@ class LeetcodeApiStuff():
     def verify(self, initial)->bool:
         """Compare the number of pbm solved when the alarm first ring and now """
         final = self.count_solved_problems()
+        print(initial)
         if final > initial:
             return True
+        print(final)
         return False

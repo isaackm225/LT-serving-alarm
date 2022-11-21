@@ -7,3 +7,4 @@ Scripts
 __pycache__/
 log.txt
 time.txt
+Tone/*
