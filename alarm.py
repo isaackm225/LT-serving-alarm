@@ -51,7 +51,8 @@ class Alarm(file_handler,LeetcodeApiStuff):
 if __name__ == "__main__":
     handler = file_handler()
     handler.log_run()
-    Alarm()
-    handler.log_success()
+    while True:
+        Alarm()
+        handler.log_success()
 
     
