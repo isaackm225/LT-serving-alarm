@@ -14,7 +14,7 @@
   <a href="https://paypal.me/izy225?country">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
-  <a href="https://wakatime.com/badge/github/Izy-stack/80s-themed-surveillance-portal"><img src="https://wakatime.com/badge/github/Izy-stack/80s-themed-surveillance-portal.svg" alt="wakatime"></a>
+<a href="https://wakatime.com/badge/github/Izy-stack/LT-serving-alarm"><img src="https://wakatime.com/badge/github/Izy-stack/LT-serving-alarm.svg" alt="wakatime"></a>
 </p>
 
 ## How to use it
