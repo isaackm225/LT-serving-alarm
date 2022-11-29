@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-<h4 align="center"> An alarm that only goes off after the user solved a leetcode problem </h4>
+<h4 align="center">1 coding challeng/day </h4>
 
 <p align="center">
   <a href="https://paypal.me/izy225?country">
