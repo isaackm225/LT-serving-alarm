@@ -21,20 +21,17 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Izy-Stack/Bash-Scripts
+$ git clone https://github.com/IsaacStack/LT-serving-alarm
 
 # Go into the repository
-$ cd Bash-Scripts/
+$ cd LT-serving-alarm/
 
 # install requirements
 $ pip3 install -r requirement.txt
 
-# Run the updates
+# Run the alarm
 $ python3 alarm.py
 ```
-
-The real power of script like these is the ability to add them to <a href="https://infinitbility.com/crontab-documentation">crontab</a> or similar services 
-
 
 
 ## You may also like...
