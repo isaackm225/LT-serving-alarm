@@ -39,7 +39,8 @@ class Alarm(file_handler,LeetcodeApiStuff):
         record = self.count_solved_problems()
         verif = self.verify(record)
         mixer.init()
-        mixer.music.load(r'./Tone/Soft-Wake-Up.wav') #change this line of code with whatever audio file you would like to play
+        dir = os.listdir(r'./Tone')
+        mixer.music.load(f'./Tone/{dir[randint(0,len(dir)-1)]}')
         mixer.music.play()
         while not verif:
             verif = self.verify(record)            
