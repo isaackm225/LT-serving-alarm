@@ -8,32 +8,30 @@
   <br>
 </h1>
 
-<h4 align="center"> An alarm that only goes off after the user solved a leetcode problem </h4>
+<h4 align="center">1 coding challeng/day </h4>
 
 <p align="center">
   <a href="https://paypal.me/izy225?country">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
+<a href="https://wakatime.com/badge/github/Izy-stack/LT-serving-alarm"><img src="https://wakatime.com/badge/github/Izy-stack/LT-serving-alarm.svg" alt="wakatime"></a>
 </p>
 
 ## How to use it
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Izy-Stack/Bash-Scripts
+$ git clone https://github.com/IsaacStack/LT-serving-alarm
 
 # Go into the repository
-$ cd Bash-Scripts/
+$ cd LT-serving-alarm/
 
 # install requirements
 $ pip3 install -r requirement.txt
 
-# Run the updates
+# Run the alarm
 $ python3 alarm.py
 ```
-
-The real power of script like these is the ability to add them to <a href="https://infinitbility.com/crontab-documentation">crontab</a> or similar services 
-
 
 
 ## You may also like...
